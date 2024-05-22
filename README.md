@@ -58,6 +58,17 @@ Default Password: servicelevel
 
 Keelson processor for creating an realtime panorama image based on multiple camera sensors
 
+
+
+# GIT REPOS
+
+https://github.com/SICKAG/ScanSegmentDecoding
+
+https://github.com/SICKAG/ScanSegmentAPI
+
+
+https://github.com/SICKAG/sick_scan_rest_client 
+
 ## Quick start
 
 ```bash
