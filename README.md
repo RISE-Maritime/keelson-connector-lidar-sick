@@ -61,7 +61,7 @@ Keelson processor for creating an realtime panorama image based on multiple came
 ## Quick start
 
 ```bash
-python3 bin/main.py --log-level 10 -e boatswain --trigger-sub rise/v0/boatswain/pubsub/compressed_image/axis-1 --camera-query rise/v0/boatswain/pubsub/compressed_image/*
+python bin/ScanSegmentAPI/scansegmentapi.py receive compact --host 10.10.30.1
 ```
 
 

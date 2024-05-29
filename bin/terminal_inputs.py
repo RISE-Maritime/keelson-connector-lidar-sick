@@ -7,6 +7,8 @@ def terminal_inputs():
     parser = argparse.ArgumentParser(
         prog="seaman",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+         description="Command line script tool to receive scan segment data "
+                    "in Compact format. "
     )
     parser.add_argument(
         "-l",
@@ -32,42 +34,23 @@ def terminal_inputs():
         "-e",
         "--entity-id",
         type=str,
-        help="Entity being a unique id representing an entity within the realm ex, landkrabba",
+        help="Entity being a unique id representing an entity/platform within the realm ex, landkrabba",
     )
 
     parser.add_argument(
-        "-oi",
-        "--output-id",
-        default="0",
+        "--host",
+        default="localhost",
         type=str,
-        help="Unique output key id (default 0)",
+        help="Host address to use for listening.",
     )
 
-
-    # Process starter 1
     parser.add_argument(
-        "-ts",
-        "--trigger-sub",
-        type=str,
-        help="Trigger Key subscribe to an camera that is triggers the panorama image generation",
-    )
-
-    # Process starter 2
-    parser.add_argument(
-        "-th",
-        "--trigger-hz",
+        "-p", 
+        "--port", 
+        default=2115, 
         type=int,
-        help="Trigger panorama image generation with fixed hz",
-    )
-
-
-    parser.add_argument(
-        "-cq",
-        "--camera-query",
-        type=str,
-        help="Key expression to query cameras",
-    )
-
+        help="Port at which to listen for incoming data. (Default: %(default)s)"
+        )
 
 
     ## Parse arguments and start doing our thing
