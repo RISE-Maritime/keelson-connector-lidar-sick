@@ -1,0 +1,12 @@
+__pycache__/
+output/
+*.ini
+*.json
+*.msgpack
+*DEBUG*
+*dist*
+*build*
+*pycache*
+*.bak
+.coverage
+htmlcov/
