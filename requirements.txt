@@ -1,6 +1,6 @@
 environs==11.0.0
 protobuf
-keelson==0.3.1-pre.20
+keelson==0.3.6
 pyserial
 eclipse-zenoh==0.10.1-rc0
 scansegmentdecoding==2.0.4
