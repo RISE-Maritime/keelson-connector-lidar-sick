@@ -59,6 +59,39 @@ Default Password: servicelevel
 Keelson processor for creating an realtime panorama image based on multiple camera sensors
 
 
+## [multiScan 100 ()](https://www.sick.com/ag/en/catalog/products/lidar-and-radar-sensors/lidar-sensors/multiscan100/c/g574914?tab=overview)
+
+
+[Operating Manual](https://cdn.sick.com/media/docs/1/11/211/operating_instructions_multiscan136_3d_lidar_sensor_en_im0104211.pdf)
+
+[Dimensional drawing]()
+
+[Working range diagram]()
+
+
+### Device Configuration
+
+Default Account: Service
+Default Password: servicelevel
+
+- IP: 10.10.50.2 (Open in web browser for Sick UI and config)
+- Measurement output: 
+  - Format: **Compact** | MSGPACK | MSGPACK
+  - IP: 10.10.30.3
+  - Port: 2115
+- IMU output:
+  - IP: 10.10.30.4
+  - Port: 7503
+
+### Scan Configuration
+
+- 20Hz % 0.1°
+- Range: 45m
+- Sensitivity: Medium
+
+Keelson processor for creating an realtime panorama image based on multiple camera sensors
+
+
 
 # GIT REPOS
 
